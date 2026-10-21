@@ -71,10 +71,7 @@ podman run --rm --privileged \
             --resultdir=/workspace/build/output \
             --project="Fedoro OS" \
             --releasever=41 \
-            --volid="FEDORO_LIVE" || {
-                echo "Warning: Direct loopback device access inside rootless container may require host root or KVM.";
-                echo "Check /workspace/build/output/ for generated logs.";
-            }
+            --volid="FEDORO_LIVE"
 '
 
 # Step 4: Verify checksums if an ISO exists

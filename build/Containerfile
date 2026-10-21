@@ -1,0 +1,14 @@
+FROM registry.fedoraproject.org/fedora:41
+
+# Pre-install Lorax, livemedia-creator, and ISO generation tools
+RUN dnf -y --setopt=install_weak_deps=False install \
+    lorax \
+    pykickstart \
+    qemu-system-x86-core \
+    edk2-ovmf \
+    xorriso \
+    squashfs-tools \
+    dosfstools \
+    && dnf clean all
+
+WORKDIR /workspace
