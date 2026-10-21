@@ -59,7 +59,7 @@ podman run --rm --privileged \
         set -euo pipefail
         echo ">>> Inside Fedoro Build Container <<<"
         echo "Updating package caches and installing build tools..."
-        dnf -y install lorax pykickstart ImageMagick-nox
+        dnf -y --setopt=install_weak_deps=False install lorax pykickstart
         
         echo "Preparing build output directory..."
         mkdir -p /workspace/build/output
