@@ -1,0 +1,24 @@
+# Build output artifacts and ISOs
+build/output/
+*.iso
+*.iso.sha256
+*.iso.sha512
+*.qcow2
+*.raw
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# User runtime configuration flags
+.welcome_shown
+
+# Editor and temporary swap files
+*.swp
+*.swo
+*~
+.DS_Store
+.vscode/
+.idea/

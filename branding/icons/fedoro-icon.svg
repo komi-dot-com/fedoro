@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fedoroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="50%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#0052d4" />
+    </linearGradient>
+    <linearGradient id="fedoroAccent" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38ef7d" />
+      <stop offset="100%" stop-color="#11998e" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded plate -->
+  <rect x="32" y="32" width="448" height="448" rx="112" fill="#0c121e" stroke="#1f2d42" stroke-width="6" />
+
+  <!-- Stylized F / Orbit Dynamic Geometry -->
+  <g filter="url(#glow)">
+    <!-- Main stem -->
+    <path d="M168 128 C168 114.7 178.7 104 192 104 L336 104 C358.1 104 376 121.9 376 144 C376 166.1 358.1 184 336 184 L224 184 L224 232 L304 232 C326.1 232 344 249.9 344 272 C344 294.1 326.1 312 304 312 L224 312 L224 384 C224 397.3 213.3 408 200 408 C186.7 408 176 397.3 176 384 L176 144 C176 135.2 173.1 128 168 128 Z" fill="url(#fedoroGrad)" />
+    
+    <!-- Wayland Speed Arc -->
+    <path d="M 280 184 C 340 184 384 228 384 288 C 384 348 340 392 280 392 C 248 392 220 378 200 356" fill="none" stroke="url(#fedoroGrad)" stroke-width="24" stroke-linecap="round" />
+    
+    <!-- Accent Spark/Node -->
+    <circle cx="344" cy="272" r="14" fill="#00f2fe" />
+    <circle cx="336" cy="144" r="12" fill="#38ef7d" />
+  </g>
+</svg>

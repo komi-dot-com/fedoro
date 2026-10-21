@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Fedoro Settings
+Comment=Configure desktop appearance, displays, and shortcuts in Fedoro OS
+Exec=fedoro-settings
+Icon=preferences-system
+Terminal=false
+Type=Application
+Categories=Settings;DesktopSettings;
+StartupNotify=true
+Keywords=settings;preferences;display;wallpaper;theme;fedoro;

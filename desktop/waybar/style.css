@@ -1,0 +1,173 @@
+/* ==============================================================================
+ * FEDORO OS - Waybar Modern Glassmorphism Styling
+ * ============================================================================== */
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Inter", "Cantarell", "Noto Sans", "Font Awesome 6 Free", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: rgba(12, 18, 30, 0.78);
+    border: 1px solid rgba(0, 242, 254, 0.25);
+    border-radius: 12px;
+    color: #f8fafc;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+
+/* Fedoro App Launcher button */
+#custom-fedoro {
+    background: linear-gradient(135deg, #00f2fe 0%, #0052d4 100%);
+    color: #ffffff;
+    padding: 0 14px;
+    margin: 4px 2px 4px 4px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+#custom-fedoro:hover {
+    background: linear-gradient(135deg, #38ef7d 0%, #11998e 100%);
+    color: #0c121e;
+}
+
+/* Hyprland Workspaces */
+#workspaces {
+    background-color: rgba(25, 36, 56, 0.6);
+    margin: 4px 2px;
+    padding: 0 4px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+#workspaces button {
+    padding: 0 8px;
+    color: #94a3b8;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+#workspaces button.active {
+    color: #00f2fe;
+    font-weight: 700;
+}
+
+#workspaces button:hover {
+    background: rgba(0, 242, 254, 0.15);
+    color: #ffffff;
+}
+
+#workspaces button.urgent {
+    background-color: #ef4444;
+    color: #ffffff;
+}
+
+/* Window title */
+#window {
+    padding: 0 12px;
+    color: #cbd5e1;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Center Clock */
+#clock {
+    background-color: rgba(25, 36, 56, 0.7);
+    padding: 0 16px;
+    margin: 4px 0;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 242, 254, 0.2);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Right Status Modules */
+#tray,
+#cpu,
+#memory,
+#pulseaudio,
+#network,
+#battery,
+#custom-notification {
+    background-color: rgba(25, 36, 56, 0.6);
+    padding: 0 10px;
+    margin: 4px 2px;
+    border-radius: 8px;
+    color: #e2e8f0;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+#cpu {
+    color: #38bdf8;
+}
+
+#memory {
+    color: #a78bfa;
+}
+
+#pulseaudio {
+    color: #34d399;
+}
+
+#pulseaudio.muted {
+    color: #94a3b8;
+    background-color: rgba(239, 68, 68, 0.2);
+}
+
+#network {
+    color: #38ef7d;
+}
+
+#network.disconnected {
+    color: #f87171;
+}
+
+#battery {
+    color: #22c55e;
+}
+
+#battery.warning:not(.charging) {
+    color: #fbbf24;
+    background-color: rgba(251, 191, 36, 0.15);
+}
+
+#battery.critical:not(.charging) {
+    color: #ef4444;
+    background-color: rgba(239, 68, 68, 0.25);
+    animation-name: blink;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#custom-notification {
+    color: #00f2fe;
+    font-size: 15px;
+    padding: 0 10px;
+}
+
+#custom-power {
+    background: rgba(239, 68, 68, 0.85);
+    color: #ffffff;
+    padding: 0 12px;
+    margin: 4px 4px 4px 2px;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+#custom-power:hover {
+    background: #dc2626;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ef4444;
+        color: #ffffff;
+    }
+}

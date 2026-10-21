@@ -1,0 +1,12 @@
+
+ ███████╗███████╗██████╗  ██████╗ ██████╗  ██████╗ 
+ ██╔════╝██╔════╝██╔══██╗██╔═══██╗██╔══██╗██╔═══██╗
+ █████╗  █████╗  ██║  ██║██║   ██║██████╔╝██║   ██║
+ ██╔══╝  ██╔══╝  ██║  ██║██║   ██║██╔══██╗██║   ██║
+ ██║     ███████╗██████╔╝╚██████╔╝██║  ██║╚██████╔╝
+ ╚═╝     ╚══════╝╚═════╝  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ 
+             FEDORO OS - Modern Wayland Linux
+      Based on Fedora, Hyprland & Flatpak ecosystem
+  * Type 'fedoro-welcome' to launch the initial setup tour
+  * Type 'fedoro-settings' for system & display preferences
+  * Hyprland shortcuts: [Super]+[Space] Launcher | [Super]+[Return] Terminal

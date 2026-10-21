@@ -1,0 +1,128 @@
+/* ==============================================================================
+ * FEDORO OS - Rofi Modern App Launcher Theme
+ * Wayland Compatible, Glassmorphism, Responsive Search
+ * ============================================================================== */
+
+configuration {
+    modi: "drun,run,filebrowser,window";
+    show-icons: true;
+    display-drun: "  Search";
+    display-run: "  Command";
+    display-window: "  Window";
+    display-filebrowser: "  Files";
+    drun-display-format: "{name}";
+    font: "Inter 11";
+}
+
+* {
+    bg-col: rgba(12, 18, 30, 0.92);
+    bg-col-light: rgba(25, 36, 56, 0.85);
+    border-col: #00f2fe;
+    selected-col: #0052d4;
+    blue: #00f2fe;
+    fg-col: #f8fafc;
+    fg-col2: #94a3b8;
+    grey: #334155;
+
+    width: 650;
+    font: "Inter 11";
+}
+
+element-text, element-icon , mode-switcher {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+window {
+    height: 480px;
+    border: 2px solid;
+    border-color: @border-col;
+    border-radius: 14px;
+    background-color: @bg-col;
+    padding: 10px;
+}
+
+mainbox {
+    background-color: transparent;
+    children: [ inputbar, listview, mode-switcher ];
+    spacing: 10px;
+}
+
+inputbar {
+    children: [prompt,entry];
+    background-color: @bg-col-light;
+    border-radius: 8px;
+    padding: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+prompt {
+    background-color: @blue;
+    padding: 6px 12px;
+    text-color: #0c121e;
+    border-radius: 6px;
+    margin: 0px 8px 0px 0px;
+    font: "Inter Bold 11";
+}
+
+textbox-prompt-colon {
+    expand: false;
+    str: ":";
+}
+
+entry {
+    padding: 6px;
+    margin: 0px 0px 0px 0px;
+    text-color: @fg-col;
+    background-color: transparent;
+    placeholder: "Type to search applications...";
+    placeholder-color: @fg-col2;
+}
+
+listview {
+    border: 0px 0px 0px;
+    padding: 6px 0px 0px;
+    margin: 10px 0px 0px 20px;
+    columns: 2;
+    lines: 7;
+    background-color: transparent;
+}
+
+element {
+    padding: 8px 12px;
+    background-color: transparent;
+    text-color: @fg-col;
+    border-radius: 8px;
+    margin: 2px;
+}
+
+element-icon {
+    size: 26px;
+    margin: 0px 10px 0px 0px;
+}
+
+element selected {
+    background-color: @selected-col;
+    text-color: #ffffff;
+    border: 1px solid @blue;
+}
+
+mode-switcher {
+    spacing: 0;
+}
+
+button {
+    padding: 8px;
+    background-color: @bg-col-light;
+    text-color: @fg-col2;
+    vertical-align: 0.5; 
+    horizontal-align: 0.5;
+    border-radius: 6px;
+    margin: 0 4px;
+}
+
+button selected {
+    background-color: @blue;
+    text-color: #0c121e;
+    font: "Inter Bold 11";
+}

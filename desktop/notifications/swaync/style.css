@@ -1,0 +1,92 @@
+/* ==============================================================================
+ * FEDORO OS - SwayNC Modern Notification Styling
+ * ============================================================================== */
+
+@define-color cc-bg rgba(12, 18, 30, 0.90);
+@define-color noti-bg rgba(25, 36, 56, 0.85);
+@define-color noti-border rgba(0, 242, 254, 0.3);
+@define-color text-color #f8fafc;
+@define-color text-muted #94a3b8;
+@define-color fedoro-cyan #00f2fe;
+
+* {
+    font-family: "Inter", "Cantarell", sans-serif;
+}
+
+.control-center {
+    background: @cc-bg;
+    border: 2px solid @noti-border;
+    border-radius: 14px;
+    padding: 12px;
+}
+
+.notification-row {
+    outline: none;
+    margin: 6px 0;
+}
+
+.notification {
+    background: @noti-bg;
+    border: 1px solid @noti-border;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.notification-content {
+    background: transparent;
+    padding: 4px;
+}
+
+.close-button {
+    background: rgba(239, 68, 68, 0.8);
+    color: #ffffff;
+    border-radius: 100%;
+    margin-top: 4px;
+    margin-right: 4px;
+    box-shadow: none;
+    border: none;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+.close-button:hover {
+    background: #ef4444;
+}
+
+.summary {
+    font-size: 14px;
+    font-weight: 700;
+    color: @text-color;
+}
+
+.body {
+    font-size: 12px;
+    font-weight: 400;
+    color: @text-muted;
+}
+
+.widget-title {
+    color: @text-color;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 8px;
+}
+
+.widget-title > button {
+    background: rgba(0, 242, 254, 0.15);
+    color: @fedoro-cyan;
+    border: 1px solid @noti-border;
+    border-radius: 6px;
+    padding: 4px 10px;
+}
+
+.widget-dnd {
+    background: rgba(25, 36, 56, 0.6);
+    border-radius: 8px;
+    margin: 6px 0;
+    padding: 8px 12px;
+}
+
+.widget-dnd > switch:checked {
+    background: @fedoro-cyan;
+}

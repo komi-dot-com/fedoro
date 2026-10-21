@@ -1,0 +1,49 @@
+/* ==============================================================================
+ * FEDORO OS - Rofi Power Menu Theme
+ * ============================================================================== */
+
+configuration {
+    show-icons: false;
+}
+
+* {
+    bg-col: rgba(12, 18, 30, 0.95);
+    border-col: #00f2fe;
+    selected-col: #ef4444;
+    fg-col: #f8fafc;
+    font: "Inter 13";
+}
+
+window {
+    width: 320px;
+    border: 2px solid;
+    border-color: @border-col;
+    border-radius: 14px;
+    background-color: @bg-col;
+    padding: 12px;
+}
+
+mainbox {
+    background-color: transparent;
+    children: [ listview ];
+}
+
+listview {
+    background-color: transparent;
+    columns: 1;
+    lines: 5;
+    spacing: 6px;
+}
+
+element {
+    padding: 10px 14px;
+    background-color: rgba(25, 36, 56, 0.7);
+    text-color: @fg-col;
+    border-radius: 8px;
+}
+
+element selected {
+    background-color: @selected-col;
+    text-color: #ffffff;
+    font: "Inter Bold 13";
+}

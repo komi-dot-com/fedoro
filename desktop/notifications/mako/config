@@ -1,0 +1,18 @@
+# ==============================================================================
+# FEDORO OS - Mako Notification Daemon Config (Fallback)
+# ==============================================================================
+
+font=Inter 11
+background-color=#0c121ee6
+text-color=#f8fafc
+border-color=#00f2fe
+border-size=2
+border-radius=10
+padding=12
+margin=10
+default-timeout=5000
+group-by=summary
+
+[urgency=high]
+border-color=#ef4444
+default-timeout=0

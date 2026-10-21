@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Fedoro Welcome
+Comment=Welcome and first-boot setup guide for Fedoro OS
+Exec=fedoro-welcome
+Icon=system-software-install
+Terminal=false
+Type=Application
+Categories=Utility;Settings;
+StartupNotify=true
+Keywords=welcome;setup;first-boot;fedoro;
